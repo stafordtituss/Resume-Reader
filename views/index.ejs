@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-Reader | Staford</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="jumbotron text-center">
+            <h1>Resume-Reader</h1>
+            <p>Upload your resume in doc or pdf format for it to be read!</p>
+        </section>
+        <section class="container">
+                <form action="/uploadResume" enctype="multipart/form-data" method="POST"> 
+                    <div class="custom-file mb-3">
+                        <input type="file" class="custom-file-input" id="customFile" name="resume" required/>
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                        <input type="submit" class="btn btn-primary" value="Submit">  
+                </form>
+                <br>
+                <% if(failure !='none') {%>
+                    <div class="alert alert-danger">
+                        <strong>Error!</strong> <%= failure %>
+                    </div>
+                <% } %>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+</body>
+</html>

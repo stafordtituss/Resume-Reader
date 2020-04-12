@@ -1,0 +1,35 @@
+{
+  "name": "resume-reader",
+  "version": "1.0.0",
+  "description": "This is a resume-reader application that can read pdf and doc resumes and parse stuff from them.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Staford Titus S",
+  "license": "ISC",
+  "dependencies": {
+    "coffee-script": "^1.12.7",
+    "doc-parser": "^0.4.9",
+    "docx4js": "^3.2.2",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "json-2-csv": "^3.6.2",
+    "json2xls": "^0.1.2",
+    "libphonenumber-js": "^1.7.50",
+    "mammoth": "^1.4.9",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.7",
+    "multer": "^1.4.2",
+    "path": "^0.12.7",
+    "pdf-parse": "^1.1.1",
+    "pdf-table-extractor": "^1.0.3",
+    "pdf.js": "^0.1.0",
+    "pdf2json": "^1.2.0",
+    "pdfreader": "^1.0.6",
+    "resume-parser": "^1.1.0",
+    "simple-resume-parser": "^1.1.8",
+    "word-extractor": "^0.3.0"
+  }
+}
