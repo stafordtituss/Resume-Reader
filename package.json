@@ -13,7 +13,7 @@
     "doc-parser": "^0.4.9",
     "docx4js": "^3.2.2",
     "ejs": "^3.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "json-2-csv": "^3.6.2",
     "json2xls": "^0.1.2",
